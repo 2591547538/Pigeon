@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:paddingTop="30dp"
+    android:background="#00ddff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+
+        android:hint="@string/user"
+        android:textColor="#000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/user1l"
+        android:background="#99FFFFFF"
+        />
+    <TextView
+
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+    <EditText
+        android:textColor="#000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/paa1l"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:background="#99FFFFFF" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+    <Button
+        android:text="@string/login"
+        android:background="#66ff00"
+        android:onClick="login"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:text="@string/registered"
+        android:onClick="ree"
+        android:background="#66ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:background="#66ff00"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/reglog" />
+</LinearLayout>

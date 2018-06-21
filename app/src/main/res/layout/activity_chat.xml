@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tongbao_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.pigeon.communication.privacy.PullToRefreshLayout
+        android:id="@+id/content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:layout_above="@+id/linearLayout2">
+
+
+
+    </com.pigeon.communication.privacy.PullToRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linearLayout"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:onClick="aes"
+            android:id="@+id/button15"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="aes+rsa" />
+        <Button
+            android:onClick="aess"
+            android:id="@+id/button16"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="AES" />
+        <Button
+            android:onClick="sersa"
+            android:id="@+id/button17"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="RSA" />
+        <Button
+            android:onClick="see"
+
+            android:id="@+id/button18"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="@string/groupmessage" />
+    </LinearLayout>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="40dp"
+    android:layout_above="@+id/bottom_container_ll"
+    android:id="@+id/linearLayout">
+    <Button
+        android:onClick="SS"
+        android:id="@+id/button13"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="@string/develop" />
+
+    <Button
+        android:id="@+id/button14"
+        android:onClick="add"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="@string/addfrin" />
+    <EditText
+        android:id="@+id/tname"
+        android:hint="@string/addfrind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tongbao_utils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <EditText
+                android:id="@+id/mess_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/xmxq_tc_bj"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/voice_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/voice_btn_normal"
+                android:padding="4dp" />
+
+            <com.pigeon.communication.privacy.AudioRecordButton
+                android:id="@+id/voice_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_recordnormal"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="@string/normal"
+                android:textColor="#727272"
+                android:visibility="gone"></com.pigeon.communication.privacy.AudioRecordButton>
+
+            <ImageView
+                android:id="@+id/emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/emoji"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/mess_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/tb_more"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoji_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/light_gray_2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/light_gray_2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@mipmap/emoji_icon" />
+
+                <TextView
+                    android:id="@+id/send_emoji_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/frame_blue_to_thin_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="发送"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pigeon.communication.privacy.ChatBottomView
+                android:id="@+id/other_lv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/mess_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button25"
+        android:onClick="b25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button25"
+        android:id="@+id/scrollView2">
+<TextView
+   android:id="@+id/agr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button26"
+        android:onClick="en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_toEndOf="@+id/button25"
+        android:layout_toRightOf="@+id/button25"
+        android:text="English" />
+
+    <Button
+        android:id="@+id/button27"
+        android:onClick="ha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button26"
+        android:layout_toRightOf="@+id/button26"
+        android:text="汉语" />
+</RelativeLayout>

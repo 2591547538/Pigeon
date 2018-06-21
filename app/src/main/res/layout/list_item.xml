@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="@string/stimg"
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@string/dialogue"
+            android:id="@+id/b2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@string/password_status"
+            android:id="@+id/b3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@string/delete"
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

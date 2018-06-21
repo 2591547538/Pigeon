@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#00ddff"
+    android:paddingBottom="30dp"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:paddingTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+
+        android:hint="@string/user"
+        android:textColor="#000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView11"
+        android:background="#99FFFFFF"
+        />
+
+
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+    <EditText
+        android:textColor="#000"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView3"
+        android:hint="@string/Password"
+
+        android:inputType="textPassword"
+        android:background="#99FFFFFF" />
+
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:text="@string/registered"
+        android:background="#66ff00"
+        android:onClick="on1w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <CheckBox
+        android:text="@string/CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:text="@string/agreement"
+        android:onClick="agreement"
+        android:background="#66ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
+    <TextView
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+    <Button
+        android:text="@string/nologin"
+        android:onClick="wifi"
+        android:background="#66ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5" />
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/mychat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/light_gray_6"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tmaname"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_alignParentTop="true"
+
+        android:text="T"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/tb_my_user_icon"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="#00ddff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tmaname"
+
+        android:layout_alignRight="@+id/tmaname"
+        android:layout_alignEnd="@+id/tmaname"
+        android:layout_alignLeft="@+id/tmaname"
+        android:layout_alignStart="@+id/tmaname" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+   
+        android:layout_toLeftOf="@+id/tb_my_user_icon"
+        android:layout_toStartOf="@+id/tb_my_user_icon">
+
+        <com.pigeon.communication.privacy.GifTextView
+            android:id="@+id/mycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/chatto_bg_focused"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

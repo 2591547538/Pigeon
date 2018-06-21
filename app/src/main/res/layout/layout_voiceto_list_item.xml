@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/mychat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/light_gray_6"
+        android:textSize="10sp"
+        android:visibility="gone" />
+    <TextView
+        android:layout_below="@+id/mychat_time"
+        android:id="@+id/tmanamev"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_alignParentTop="true"
+
+        android:text="T222"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/tb_my_user_icon"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="#00ddff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tmanamev"
+
+        android:layout_alignRight="@+id/tmanamev"
+        android:layout_alignEnd="@+id/tmanamev"
+        android:layout_alignLeft="@+id/tmanamev"
+        android:layout_alignStart="@+id/tmanamev" />
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="#818181"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tmanamev"
+        android:layout_toStartOf="@+id/tmanamev"
+        android:text="aa"
+        android:textColor="#818181"
+        />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView99"
+        android:layout_toLeftOf="@+id/imageView"
+
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/textView99"
+        android:layout_alignStart="@+id/textView99" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mychat_time"
+        android:layout_toLeftOf="@+id/textView99"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+
+        <LinearLayout
+            android:id="@+id/voice_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/middle_gray_1" />
+
+            <FrameLayout
+                android:id="@+id/voice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/chatto_bg_focused">
+
+                <View
+                    android:id="@+id/id_recorder_anim"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@mipmap/adj" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

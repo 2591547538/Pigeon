@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:background="#00ddff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/sound"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView20"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView21"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView25"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView26"
+
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button11"
+        android:onClick="mesggback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView27"
+        android:text="@string/back"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

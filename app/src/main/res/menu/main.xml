@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu01"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/Friends_list"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu02"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/Group_list"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu03"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/history"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu04"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/Online"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu05"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/sound"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu06"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/support"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu07"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/help"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu08"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/Use_the_feedback"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu09"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/picture"
+        tools:ignore="AppCompatResource" />
+</menu>
